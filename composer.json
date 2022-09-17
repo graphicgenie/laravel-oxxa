@@ -1,0 +1,34 @@
+{
+    "name": "graphicgenie/laravel-oxxa",
+    "type": "laravel-plugin",
+    "autoload": {
+        "psr-4": {
+            "GraphicGenie\\LaravelOxxa\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GraphicGenie\\LaravelOxxa\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ronald Gerssen",
+            "email": "ronald@graphicgenie.nl"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GraphicGenie\\LaravelOxxa\\LaravelOxxaServiceProvider"
+            ],
+            "aliases": {
+                "Oxxa": "GraphicGenie\\LaravelOxxa\\Facades\\Oxxa"
+            }
+        }
+    }
+}
