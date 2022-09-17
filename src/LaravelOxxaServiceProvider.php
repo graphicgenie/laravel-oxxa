@@ -8,9 +8,7 @@ class LaravelOxxaServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->bind("oxxa", function ($app) {
-            return new LaravelOxxa();
-        });
+        $this->app->bind("oxxa");
 
         $this->mergeConfigFrom(
             __DIR__ . "/../config/config.php",

@@ -2,9 +2,7 @@
 
 namespace GraphicGenie\LaravelOxxa\API;
 
-use GraphicGenie\LaravelOxxa\Connection;
-
-class Contacts extends Connection
+class Contacts extends Client
 {
     public function Check(string $handle)
     {

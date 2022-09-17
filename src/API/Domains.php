@@ -2,9 +2,7 @@
 
 namespace GraphicGenie\LaravelOxxa\API;
 
-use GraphicGenie\LaravelOxxa\Connection;
-
-class Domains extends Connection
+class Domains extends Client
 {
     public function Check(string $domain)
     {

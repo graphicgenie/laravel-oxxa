@@ -1,10 +1,10 @@
 <?php
 
-namespace GraphicGenie\LaravelOxxa;
+namespace GraphicGenie\LaravelOxxa\API;
 
 use Illuminate\Support\Facades\Http;
 
-class Connection
+class Client
 {
     protected string $endpoint = "https://api.oxxa.com/command.php";
 
