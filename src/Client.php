@@ -1,6 +1,6 @@
 <?php
 
-namespace GraphicGenie\LaravelOxxa\API;
+namespace GraphicGenie\LaravelOxxa;
 
 use Illuminate\Support\Facades\Http;
 
@@ -8,7 +8,7 @@ class Client
 {
     protected string $endpoint = "https://api.oxxa.com/command.php";
 
-    public function request($args): array
+    public function request(array $args): array
     {
         $response = Http::get(
             $this->endpoint,
