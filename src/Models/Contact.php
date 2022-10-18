@@ -14,6 +14,7 @@ namespace GraphicGenie\LaravelOxxa\Models;
  * @property string $suffix
  * @property string $postalcode
  * @property string $city
+ * @property string $state
  * @property string $tel
  * @property string $email
  * @property string $country
@@ -33,6 +34,7 @@ class Contact extends Model
         "suffix",
         "postalcode",
         "city",
+        "state",
         "tel",
         "email",
         "country",
