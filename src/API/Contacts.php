@@ -14,7 +14,7 @@ class Contacts extends Client
             "identity" => $handle,
         ]);
 
-        return str_contains($response["status_code"], "XMLRRR");
+        return str_contains($response["status_code"], "XMLOK");
     }
 
     public function add(Contact $contact): array
