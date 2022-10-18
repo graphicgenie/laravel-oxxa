@@ -6,6 +6,7 @@ namespace GraphicGenie\LaravelOxxa\Models;
  * @property string $alias
  * @property string $company // "Y" or "N"
  * @property string $company_name
+ * @property string $jobtitle // required if company
  * @property string $firstname
  * @property string $lastname
  * @property string $street
@@ -24,6 +25,7 @@ class Contact extends Model
         "alias",
         "company",
         "company_name",
+        "jobtitle",
         "firstname",
         "lastname",
         "street",
