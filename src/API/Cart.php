@@ -19,6 +19,11 @@ class Cart extends Client
         );
     }
 
+    public function update(array $attr): array
+    {
+        return $this->request(array_merge(["command" => "cart_upd"], $attr));
+    }
+
     public function delete(string $item_id, bool $empty = false): array
     {
         $args = [

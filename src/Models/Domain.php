@@ -20,11 +20,11 @@ class Domain extends Model
     protected array $fillable = [
         "sld",
         "tld",
-        "product_type",
-        "identity_admin",
-        "identity_tech",
-        "identity_billing",
-        "identity_registrant",
+        "producttype",
+        "identity-admin",
+        "identity-tech",
+        "identity-billing",
+        "identity-registrant",
         "nsgroup",
         "trans_epp",
     ];
