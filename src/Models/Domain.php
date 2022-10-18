@@ -5,7 +5,7 @@ namespace GraphicGenie\LaravelOxxa\Models;
 /**
  * @property string $sld
  * @property string $tld
- * @property string $product_type // renew, register, transfer, uit quarantaine
+ * @property string $producttype // renew, register, transfer, uit quarantaine
  * @property string $identity_admin
  * @property string $identity_tech
  * @property string $identity_billing
