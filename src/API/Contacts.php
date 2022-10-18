@@ -7,12 +7,14 @@ use GraphicGenie\LaravelOxxa\Models\Contact;
 
 class Contacts extends Client
 {
-    public function check(string $handle): array
+    public function check(string $handle): bool
     {
-        return $this->request([
+        $response = $this->request([
             "command" => "identity_get",
             "identity" => $handle,
         ]);
+
+        return str_contains($response["status_code"], "XMLRRR");
     }
 
     public function add(Contact $contact): array
