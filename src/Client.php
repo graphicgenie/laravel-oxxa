@@ -6,12 +6,10 @@ use Illuminate\Support\Facades\Http;
 
 class Client
 {
-    protected string $endpoint = "https://api.oxxa.com/command.php";
-
     public function request(array $args): array
     {
         $response = Http::get(
-            $this->endpoint,
+            config("laravel-oxxa.endpoint"),
             array_merge(
                 [
                     "apiuser" => config("laravel-oxxa.username"),
