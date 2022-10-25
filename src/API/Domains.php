@@ -22,4 +22,11 @@ class Domains extends Client
 
         return $this->request(array_merge(["command" => "domain_inf"], $args));
     }
+
+    public function authCode(Domain $domain): array
+    {
+        $args = ["sld" => $domain->sld, "tld" => $domain->tld];
+
+        return $this->request(array_merge(["command" => "domain_epp"], $args));
+    }
 }
