@@ -29,4 +29,13 @@ class Domains extends Client
 
         return $this->request(array_merge(["command" => "domain_epp"], $args));
     }
+
+    public function transferStatus(Domain $domain): array
+    {
+        $args = ["sld" => $domain->sld, "tld" => $domain->tld];
+
+        return $this->request(
+            array_merge(["command" => "transfer_status"], $args)
+        );
+    }
 }
