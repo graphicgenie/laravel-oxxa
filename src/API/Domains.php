@@ -34,7 +34,7 @@ class Domains extends Client
             $args['epp'] = $domain->trans_epp;
 
 
-        return $this->request(array_merge(["command" => "domain_inf"], $args));
+        return $this->request(array_merge(["command" => "domain_upd"], $args));
     }
 
     public function authCode(Domain $domain): array
