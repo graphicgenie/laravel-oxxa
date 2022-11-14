@@ -23,6 +23,20 @@ class Domains extends Client
         return $this->request(array_merge(["command" => "domain_inf"], $args));
     }
 
+    public function update(Domain $domain): array
+    {
+        $args = ["sld" => $domain->sld, "tld" => $domain->tld];
+
+        if(isset($domain->identity_registrant))
+            $args['identity_registrant'] = $domain->identity_registrant;
+
+        if(isset($domain->trans_epp))
+            $args['epp'] = $domain->trans_epp;
+
+
+        return $this->request(array_merge(["command" => "domain_inf"], $args));
+    }
+
     public function authCode(Domain $domain): array
     {
         $args = ["sld" => $domain->sld, "tld" => $domain->tld];
