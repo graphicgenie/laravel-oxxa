@@ -23,7 +23,7 @@ class DNSSec extends Client
                 "flag" => $key['flags'],
                 "protocol" => $key['protocol'],
                 "alg" => $key['alg'],
-                "pubkey" => $key['pubkey']
+                "pubKey" => $key['pubKey']
             ];
 
             $response = $this->request(array_merge(["command" => "dnssec_add"], $args));
@@ -45,7 +45,7 @@ class DNSSec extends Client
                 "flag" => $key['flags'],
                 "protocol" => $key['protocol'],
                 "alg" => $key['alg'],
-                "pubkey" => $key['pubkey']
+                "pubKey" => $key['pubKey']
             ];
 
             $response = $this->request(array_merge(["command" => "dnssec_del"], $args));
