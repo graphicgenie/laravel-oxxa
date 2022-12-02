@@ -2,10 +2,12 @@
 
 namespace GraphicGenie\LaravelOxxa\Facades;
 
+use GraphicGenie\LaravelOxxa\API\DNSSec;
 use Illuminate\Support\Facades\Facade;
 
 /**
  * @method static Domains()
+ * @method static DNSSec()
  * @method static Contacts()
  * @method static Cart()
  **/
