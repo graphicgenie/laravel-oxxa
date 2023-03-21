@@ -14,7 +14,7 @@ Publish config file
 ```
 php artisan vendor:publish --provider="GraphicGenie\LaravelOxxa\LaravelOxxaServiceProvider" --tag="config"
 ```
-Set SIDN config in your .env file
+Set OXXA config in your .env file
 ```
 OXXA_TEST
 OXXA_USERNAME
